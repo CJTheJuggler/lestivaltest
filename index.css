@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*BODY*/
+body {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+/**/
+html {
+    font-family: Arial, sans-serif;
+}
+
+
+
+.au-head,
+.loc-head,
+.gal-head,
+.cont-head,
+.social-media-title {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+
+/*PAGE TITLES*/
+.banner {
+    position: relative;
+    left: 25%;
+    margin: 10px auto;
+    width: 100%;
+}
+
+/*PAGE TITLE IMAGE*/
+.banner img {
+    vertical-align: center;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+.au-loc {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: start;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.au-cont {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.loc-map {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+iframe {
+    width: 875px;
+    height: 355px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+/* PHOTO POSITIONS */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: center;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.gallary {
+    /* Brings the header to the center */
+    text-align: center;
+
+    /* creates space between the gallery and the content above it */
+    margin-top: 20px;
+}
+
+
+
+.contact {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.cont-cont {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: large;
+}
+
+
+
+/*EDITS SOCIAL MEDIA LINKS*/
+/*Makes the "Social Media" Title be in the middle of the links*/
+.social-media-title {
+    position: absolute;
+    display: flex;
+    position: relative;
+    justify-content: right;
+    align-items: right;
+    right: auto;
+}
+
+/*Makes the links be on the right of the screen*/
+.social-media {
+    display: absolute;
+    position: relative;
+    width: 100%;
+    text-align: right;
+    z-index: 100;
+    bottom: 0;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    right: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+
+
+footer {
+    text-align: center;
+    bottom: 0;
+    padding: 0 5px;
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .au-head,
+    .loc-head,
+    .gal-head,
+    .cont-head,
+    .social-media-title {
+        font-size: medium;
+        font-weight: bolder;
+    }
+
+    .au-cont,
+    .cont-cont,
+    footer {
+        font-size: small;
+    }
+
+    /*PAGE TITLES*/
+    .banner {
+        position: relative;
+        left: 15%;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    /*PAGE TITLE IMAGE*/
+    .banner img {
+        vertical-align: center;
+        width: 75%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .au-loc {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        gap: 25px;
+        padding: 0 10px;
+    }
+
+
+    .au-cont {
+        border: 1px solid black;
+        border-radius: 10px;
+        height: auto;
+        width: 100%;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .loc-map {
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 5px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .contact {
+        padding-top: 25px;
+        text-align: center;
+        margin: auto;
+        width: 90%;
+    }
+
+    .cont-cont {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+}
