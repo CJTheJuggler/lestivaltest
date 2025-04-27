@@ -187,11 +187,12 @@ iframe {
     margin-bottom: 10px;
 }
 
-.social-media>div{
+.social-media>div {
     display: flex;
     justify-content: right;
     align-items: right;
     gap: 10px;
+    font-size: medium;
 }
 
 .social-media a {
