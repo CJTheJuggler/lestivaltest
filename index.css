@@ -16,9 +16,33 @@ body {
     overflow-x: hidden;
 }
 
+body a {
+    color: #fe0000;
+}
+
 /**/
 html {
     font-family: Arial, sans-serif;
+}
+
+
+
+
+#countdown {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fe0000;
 }
 
 
@@ -27,7 +51,8 @@ html {
 .loc-head,
 .gal-head,
 .cont-head,
-.social-media-title {
+.social-media-title
+.w3w-loc {
     font-size: x-large;
     font-weight: bolder;
 }
@@ -79,8 +104,8 @@ html {
 }
 
 iframe {
-    width: 875px;
-    height: 355px;
+    width: 37em;
+    height: 26em;
     border-radius: 10px;
     border: none;
 }
@@ -125,15 +150,15 @@ iframe {
     width: 50%;
 }
 
+.contact a {
+    text-decoration: none;
+}
+
 .cont-cont {
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px 10px;
     font-size: large;
-}
-
-.contact a {
-    color: red;
 }
 
 
@@ -177,11 +202,23 @@ footer {
 
 @media screen and (max-width:1024px) {
 
+    h1 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    #timer {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+
     .au-head,
     .loc-head,
     .gal-head,
     .cont-head,
-    .social-media-title {
+    .social-media-title
+    .w3w-loc {
         font-size: medium;
         font-weight: bolder;
     }
