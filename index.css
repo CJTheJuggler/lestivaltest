@@ -1,142 +1,197 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*BODY*/
-body {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow-x: hidden;
-}
-
-/**/
+/* GLOBAL */
 html {
     font-family: Arial, sans-serif;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0) 60%,
+        rgba(0, 0, 0, 0.05) 100%
+    );
+    z-index: -1;
+}
 
+
+body {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+    background-size: 300px;
+    color: #222;
+    overflow-x: hidden
+
+}
+
+/* Links */
+a {
+    color: #fe0000;
+    text-decoration: none;
+}
+
+/* ----------------------------- */
+/* BANNER */
+/* ----------------------------- */
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 30px 0;
+}
+
+.banner img {
+    width: 60%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ----------------------------- */
+/* COUNTDOWN */
+/* ----------------------------- */
+
+#countdown {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#countdown h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#target-date {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#timer {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fe0000;
+    transition: opacity 0.3s ease;
+}
+
+/* ----------------------------- */
+/* SECTION HEADERS */
+/* ----------------------------- */
 
 .au-head,
 .loc-head,
 .gal-head,
 .cont-head,
-.social-media-title {
-    font-size: x-large;
-    font-weight: bolder;
+.social-media-title,
+.w3w-loc {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-
-
-/*PAGE TITLES*/
-.banner {
-    position: relative;
-    left: 25%;
-    margin: 10px auto;
-    width: 100%;
-}
-
-/*PAGE TITLE IMAGE*/
-.banner img {
-    vertical-align: center;
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
-}
-
-
+/* ----------------------------- */
+/* ABOUT + LOCATION GRID */
+/* ----------------------------- */
 
 .au-loc {
     display: grid;
-    grid-template-columns: 50% 50%;
-    align-content: start;
-    justify-content: center;
-    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     padding: 0 50px;
-    text-align: center;
+    margin-bottom: 50px;
 }
 
-.au-cont {
-    border: 1px solid black;
-    border-radius: 10px;
-    height: auto;
-    width: auto;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: large;
-}
-
+.au-cont,
 .loc-map {
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 5px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
+/* MAP */
 iframe {
-    width: 875px;
-    height: 355px;
+    width: 100%;
+    height: 22em;
     border-radius: 10px;
     border: none;
+    margin-bottom: 10px;
 }
 
+/* ----------------------------- */
+/* GALLERY */
+/* ----------------------------- */
 
+.gallery {
+    text-align: center;
+    margin-top: 40px;
+}
 
-/* PHOTO POSITIONS */
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 10px;
+    justify-content: center;
 }
 
 .column {
-    flex: 25%;
+    flex: 33.3%;
     max-width: 33.3%;
-    padding: 0 4px;
+    padding: 10px;
 }
 
 .column img {
-    margin-top: 8px;
-    vertical-align: center;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-
-
-.gallary {
-    /* Brings the header to the center */
-    text-align: center;
-
-    /* creates space between the gallery and the content above it */
-    margin-top: 20px;
+.column img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
-
+/* ----------------------------- */
+/* CONTACT */
+/* ----------------------------- */
 
 .contact {
     text-align: center;
-    margin: auto;
-    width: 50%;
+    margin: 50px auto;
+    width: 60%;
 }
 
 .cont-cont {
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 5px 10px;
-    font-size: large;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.contact a {
-    color: red;
-}
-
-
+/* ----------------------------- */
+/* SOCIAL MEDIA */
+/* ----------------------------- */
 
 /*EDITS SOCIAL MEDIA LINKS*/
 /*Makes the "Social Media" Title be in the middle of the links*/
@@ -166,89 +221,60 @@ iframe {
     text-decoration: none;
 }
 
-
+/* ----------------------------- */
+/* FOOTER */
+/* ----------------------------- */
+footer::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0) 60%,
+        rgba(0, 0, 0, 0.05) 100%
+    );
+    z-index: -1;
+}
 
 footer {
     text-align: center;
-    bottom: 0;
-    padding: 0 5px;
+    padding: 20px;
+    margin-top: 40px;
+    background: #ffffff;
+    border-top: 1px solid #e5e5e5;
+    font-size: 0.9rem;
 }
 
+/* ----------------------------- */
+/* RESPONSIVE */
+/* ----------------------------- */
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
 
-    .au-head,
-    .loc-head,
-    .gal-head,
-    .cont-head,
-    .social-media-title {
-        font-size: medium;
-        font-weight: bolder;
-    }
-
-    .au-cont,
-    .cont-cont,
-    footer {
-        font-size: small;
-    }
-
-    /*PAGE TITLES*/
-    .banner {
-        position: relative;
-        left: 15%;
-        margin: 10px auto;
-        width: 100%;
-    }
-
-    /*PAGE TITLE IMAGE*/
     .banner img {
-        vertical-align: center;
-        width: 75%;
-        height: auto;
-        border-radius: 10px;
+        width: 80%;
+    }
+
+    #countdown h1 {
+        font-size: 1.4rem;
+    }
+
+    #timer {
+        font-size: 1.8rem;
     }
 
     .au-loc {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto;
-        gap: 25px;
-        padding: 0 10px;
-    }
-
-
-    .au-cont {
-        border: 1px solid black;
-        border-radius: 10px;
-        height: auto;
-        width: 100%;
-        padding: 5px 10px;
-        text-align: center;
-    }
-
-    .loc-map {
-        border: 1px solid black;
-        border-radius: 15px;
-        padding: 5px;
-    }
-
-    iframe {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        border: none;
+        grid-template-columns: 1fr;
+        padding: 0 20px;
     }
 
     .contact {
-        padding-top: 25px;
-        text-align: center;
-        margin: auto;
         width: 90%;
     }
 
-    .cont-cont {
-        border: 1px solid black;
-        border-radius: 10px;
-        padding: 5px 10px;
+    .column {
+        flex: 100%;
+        max-width: 100%;
     }
 }

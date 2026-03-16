@@ -1,110 +1,140 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
-    <!-- SETTING THE INFORMATION OF THE DOCUMENT -->
+    <!-- META INFORMATION -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lestival!</title>
+    <title>Lestival</title>
 
-    <!--SETTING THE FAVICON-->
-    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/nq4Mwd5V/logo.jpg" />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/nq4Mwd5V/logo.jpg">
 
-    <!--STYLESHEET LINKS-->
-    <link rel="stylesheet" href="./index.css" />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./index.css">
 
-    <!--SCRIPT LINKS-->
+    <!-- SCRIPTS -->
+    <script src="index.js" defer></script>
 </head>
 
 <body>
+
+    <!-- BANNER / HERO IMAGE -->
     <section class="banner">
-        <img src="https://i.ibb.co/3m9PqQZb/banner.jpg" alt="banner" />
+        <img src="https://i.ibb.co/3m9PqQZb/banner.jpg" alt="Lestival Banner">
     </section>
 
     <main>
-        <ariticle class="au-loc">
-            <!--ABOUT US -->
+
+        <!-- COUNTDOWN SECTION -->
+        <section id="countdown">
+            <h1>Countdown to Lestival!</h1>
+            <p id="target-date"></p>
+            <p id="timer"></p>
+        </section>
+
+        <!-- ABOUT + LOCATION SECTION -->
+        <article class="au-loc">
+
+            <!-- ABOUT US -->
             <div class="au">
                 <h2 class="au-head">About Us</h2>
 
                 <p class="au-cont">
-                    Welcome to Lestival!, Leicester's premier annual maday bank holiday circus festival! We invite you to immerse
-                    yourself in a world of wonder, creativity, and excitement as we celebrate the vibrant spirit of
-                    the circus in our beautiful city.<br><br>
+                    Welcome to Lestival, Leicester's premier annual May Day bank holiday circus festival! We invite you
+                    to immerse yourself in a world of wonder, creativity, and excitement as we celebrate the vibrant
+                    spirit of the circus in our beautiful city.<br><br>
 
-                    At Lestival!, you can explore a variety of engaging workshops led by experienced circus
+                    At Lestival, you can explore a variety of engaging workshops led by experienced circus
                     professionals. Whether you’re a beginner or a seasoned performer, our sessions offer something
                     for everyone. Get hands-on experience and discover your inner performer in a fun, supportive
-                    environment. <br><br>
+                    environment.<br><br>
 
                     Don’t miss our festival shop, where you can find an array of circus equipment to enhance your
                     own circus journey. Whether you’re looking to equip yourself for the next performance or
-                    searching for a special gift, we have everything you need to bring the circus home! <br><br>
+                    searching for a special gift, we have everything you need to bring the circus home!<br><br>
 
                     As the day winds down, prepare for our thrilling evening show, featuring spectacular
                     performances from talented artists that will leave you on the edge of your seat. Experience the
-                    magic of the circus as acts captivate audiences of all ages. <br><br>
+                    magic of the circus as acts captivate audiences of all ages.<br><br>
 
-                    Join us at Lestival! for a day filled with laughter, learning, and unforgettable memories. We
+                    Join us at Lestival for a day filled with laughter, learning, and unforgettable memories. We
                     can’t wait to share the joy of the circus with you!
                 </p>
             </div>
 
-            <!--LOCATION-->
+            <!-- LOCATION -->
             <div class="location">
                 <h2 class="loc-head">Where Are We?</h2>
 
                 <div class="loc-map">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11714.26826354349!2d-1.2046513107586223!3d52.58533324522957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48775d93f157d193%3A0x56b7785b38782f19!2sBrockington%20College!5e0!3m2!1sen!2suk!4v1740503288067!5m2!1sen!2suk">
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11714.26826354349!2d-1.2046513107586223!3d52.58533324522957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48775d93f157d193%3A0x56b7785b38782f19!2sBrockington%20College!5e0!3m2!1sen!2suk!4v1740503288067!5m2!1sen!2suk"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
+
+                    <h3 class="w3w-loc">What 3 Words</h3>
+                    <a href="https://what3words.com/" target="_blank">///class.dots.mild</a>
                 </div>
             </div>
-        </ariticle>
 
-        <!--GALLERY-->
-        <article class="gallary">
+        </article>
+
+        <!-- GALLERY -->
+        <article class="gallery">
             <h2 class="gal-head">Gallery</h2>
 
             <div class="row">
                 <div class="column">
-                    <img src="https://i.ibb.co/sdvvj4S8/DSC0306.jpg" alt="DSC0306" />
+                    <img src="https://i.ibb.co/sdvvj4S8/DSC0306.jpg" alt="Circus Performer">
                 </div>
+
                 <div class="column">
-                    <img src="https://i.ibb.co/9HrqZ65W/oddballs.jpg" alt="oddballs" />
-                    <img src="https://i.ibb.co/CK1j9pPh/DSC0446.jpg" alt="DSC0446" />
+                    <img src="https://i.ibb.co/9HrqZ65W/oddballs.jpg" alt="Oddballs Stall">
+                    <img src="https://i.ibb.co/CK1j9pPh/DSC0446.jpg" alt="Circus Act">
                 </div>
+
                 <div class="column">
-                    <img src="https://i.ibb.co/3y6q9pjB/overshot.jpg" alt="overshot" />
+                    <img src="./images/overshot.jpg" alt="Festival Overview">
                 </div>
             </div>
         </article>
 
-        <!--CONTACTING LESTIVAL-->
+        <!-- CONTACT -->
         <article class="contact">
-            <h2 class="cont-head">Contacting us</h2>
+            <h2 class="cont-head">Contacting Us</h2>
+
             <p class="cont-cont">
-                If you need to contact us at anypoint leading up to the event, please email us at
-                <a href="mailto:" target="_blank">{email}</a>, or check out our social media pages for more
-                information. We are always happy to help with any queries you may have.
+                If you need to contact us at any point leading up to the event, please email us at
+                <a href="mailto:contact@lestival.co.uk" target="_blank">contact@lestival.co.uk</a>,
+                or check out our social media pages for more information. We are always happy to help with any queries
+                you may have.
             </p>
         </article>
 
-        <!--SOCIAL MEDIA-->
-        <div class="social-media">
+        <!-- SOCIAL MEDIA -->
+        <section class="social-media">
             <h3 class="social-media-title">Stay Connected</h3>
-            <a href="https://www.facebook.com/lestival.uk" target="_blank" alt="fb" class="social-icon"><img
-                    src="https://img.icons8.com/?size=48&id=jZ0kw76QEzJU&format=png&color=000000" />
+
+            <a href="https://www.facebook.com/lestival.uk" target="_blank" class="social-icon">
+                <img src="https://img.icons8.com/?size=48&id=jZ0kw76QEzJU&format=png&color=000000" alt="Facebook">
             </a>
 
-            <a href="https://www.instagram.com/lestival_uk/" target="_blank" alt="ig" class="social-icon"><img
-                    src="https://img.icons8.com/?size=48&id=nj0Uj45LGUYh&format=png&color=000000" />
+            <a href="https://www.instagram.com/lestival_uk/" target="_blank" class="social-icon">
+                <img src="https://img.icons8.com/?size=48&id=nj0Uj45LGUYh&format=png&color=000000" alt="Instagram">
             </a>
-        </div>
+        </section>
+
     </main>
 
-    <footer>All media displayed within this website is exclusive property of Lestival! or the relivant photographers stated</footer>
+    <!-- FOOTER -->
+    <footer>
+        All media displayed within this website is exclusive property of Lestival or the relevant photographers stated.
+    </footer>
+
 </body>
 
 </html>
