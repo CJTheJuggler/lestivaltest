@@ -2,139 +2,140 @@
 <html lang="en">
 
 <head>
-    <!-- META INFORMATION -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Lestival</title>
-
-    <!-- FAVICON -->
-    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/nq4Mwd5V/logo.jpg">
-
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" href="./index.css">
-
-    <!-- SCRIPTS -->
-    <script src="index.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lestival</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://drive.google.com/thumbnail?id=1HQzzEGTBKWlfAOGqIiLBsr_ZjkIfW6y5&sz=w100" />
+  <link rel="stylesheet" href="./index.css" />
+  <script src="./index.js" defer></script>
 </head>
 
 <body>
+  <div class="lest-wrap">
 
-    <!-- BANNER / HERO IMAGE -->
-    <section class="banner">
-        <img src="https://i.ibb.co/3m9PqQZb/banner.jpg" alt="Lestival Banner">
-    </section>
+    <div class="lest-hero">
+      <img class="lest-banner-img" src="https://drive.google.com/thumbnail?id=14l8gIBm2r0YJiOe-Sa3_XMSK6TZ-ETJQ&sz=w800"
+        alt="Lestival Banner">
+      <p class="lest-hero-sub">Leicester's favourite one-day convention &mdash; Saturday, 2 May 2026</p>
+    </div>
 
-    <main>
+    <div class="lest-countdown">
+      <div class="lest-countdown-label">Lestival XVII is in:</div>
+      <div class="lest-timer-grid">
+        <div class="lest-timer-cell">
+          <div class="lest-timer-num" id="l-days">--</div>
+          <div class="lest-timer-unit">days</div>
+        </div>
+        <div class="lest-sep">:</div>
+        <div class="lest-timer-cell">
+          <div class="lest-timer-num" id="l-hrs">--</div>
+          <div class="lest-timer-unit">hours</div>
+        </div>
+        <div class="lest-sep">:</div>
+        <div class="lest-timer-cell">
+          <div class="lest-timer-num" id="l-min">--</div>
+          <div class="lest-timer-unit">mins</div>
+        </div>
+        <div class="lest-sep">:</div>
+        <div class="lest-timer-cell">
+          <div class="lest-timer-num" id="l-sec">--</div>
+          <div class="lest-timer-unit">secs</div>
+        </div>
+      </div>
+    </div>
 
-        <!-- COUNTDOWN SECTION -->
-        <section id="countdown">
-            <h1>Countdown to Lestival!</h1>
-            <p id="target-date"></p>
-            <p id="timer"></p>
-        </section>
+    <div class="lest-two-col">
+      <div class="lest-card lest-about">
+        <div class="lest-section-title">About Us</div>
+        <p>Lestival is a one-day circus convention where attendees can partake in workshops, chat and catch up with friends.</p>
+        <p>In the evening, watch a show of talented performers as we celebrate everything we love about circus.</p>
+      </div>
+      <div class="lest-card lest-location">
+        <div class="lest-section-title">Where are we?</div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2424.168552812182!2d-1.2046823227640793!3d52.584645772078204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48775d93f157d193%3A0x56b7785b38782f19!2sBrockington%20College!5e0!3m2!1sen!2suk!4v1774624594555!5m2!1sen!2suk"
+          loading="lazy"></iframe>
+        <div class="lest-w3w">
+          <div class="lest-w3w-label">What3Words</div>
+          <a href="https://what3words.com/acted.tasty.type" target="_blank">///acted.tasty.type &mdash; car park
+            entrance</a>
+          <a href="https://what3words.com/boost.chain.native" target="_blank">///boost.chain.native &mdash; venue
+            entrance</a>
+        </div>
+      </div>
+    </div>
 
-        <!-- ABOUT + LOCATION SECTION -->
-        <article class="au-loc">
+    <div class="lest-pricing">
+      <div class="lest-section-title">Ticket Prices</div>
+      <div class="lest-pricing-grid">
+        <div class="lest-price-item">
+          <div class="lest-price-label">Adults</div>
+          <div class="lest-price-amount">£10</div>
+        </div>
+        <div class="lest-price-item">
+          <div class="lest-price-label">Children (4-16)</div>
+          <div class="lest-price-amount">£5</div>
+        </div>
+        <div class="lest-price-item">
+          <div class="lest-price-label">Under 4</div>
+          <div class="lest-price-amount">Free</div>
+        </div>
+        <div class="lest-price-item">
+          <div class="lest-price-label">Family (2+2)</div>
+          <div class="lest-price-amount">£25</div>
+        </div>
+      </div>
+    </div>
 
-            <!-- ABOUT US -->
-            <div class="au">
-                <h2 class="au-head">About Us</h2>
+    <div class="lest-timetable">
+      <div class="lest-section-title">Timetable</div>
+      <iframe src="http://www.circustimetable.com/lestival17#timetable" allowfullscreen></iframe>
+    </div>
 
-                <p class="au-cont">
-                    Welcome to Lestival, Leicester's premier annual May Day bank holiday circus festival! We invite you
-                    to immerse yourself in a world of wonder, creativity, and excitement as we celebrate the vibrant
-                    spirit of the circus in our beautiful city.<br><br>
+    <div class="lest-gallery-wrap">
+      <div class="lest-section-title">Gallery</div>
+      <div class="lest-gallery">
+        <div class="big"><img src="https://drive.google.com/thumbnail?id=1hkDNu5XYwCBIgOPrly6zZpzQQNCdCfBu&sz=w800"
+            alt="The Games"></div>
+        <div><img src="https://drive.google.com/thumbnail?id=14sDOap5Zi9lodyIN8obr3gEpRG2zHZny&sz=w400" alt="Oddballs">
+        </div>
+        <div class="vertical"><img
+            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=60" alt="">
+        </div>
+        <div><img src="https://images.unsplash.com/photo-1548407260-da850faa41e3?auto=format&fit=crop&w=400&q=60"
+            alt=""></div>
+        <div class="horizontal"><img
+            src="https://images.unsplash.com/photo-1548506923-99f6e89852fe?auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div><img src="https://images.unsplash.com/photo-1547903006-2845abe6e3c2?auto=format&fit=crop&w=400&q=60"
+            alt=""></div>
+        <div class="horizontal"><img
+            src="https://images.unsplash.com/photo-1547297355-7d839b27ffb2?auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div class="big"><img
+            src="https://images.unsplash.com/photo-1511534520542-e0fb6d4a4df6?auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div><img src="https://images.unsplash.com/photo-1546213642-d79f08fa2169?auto=format&fit=crop&w=400&q=60"
+            alt=""></div>
+        <div><img src="https://images.unsplash.com/photo-1545844895-1bf88a0213a8?auto=format&fit=crop&w=400&q=60"
+            alt=""></div>
+      </div>
+    </div>
 
-                    At Lestival, you can explore a variety of engaging workshops led by experienced circus
-                    professionals. Whether you’re a beginner or a seasoned performer, our sessions offer something
-                    for everyone. Get hands-on experience and discover your inner performer in a fun, supportive
-                    environment.<br><br>
+    <div class="lest-contact">
+      <div class="lest-section-title">Contact</div>
+      <p><strong>If you wish to contact anyone involved with Lestival please use the following links</strong></p>
+      <p>Email us at <a href="mailto:contact@lestival.co.uk">contact@lestival.co.uk</a></p>
+      <div class="lest-social-row">
+        <a class="lest-social-btn" href="https://www.facebook.com/lestival.uk" target="_blank">Facebook</a>
+        <a class="lest-social-btn" href="https://www.instagram.com/lestival_uk/" target="_blank">Instagram</a>
+      </div>
+    </div>
 
-                    Don’t miss our festival shop, where you can find an array of circus equipment to enhance your
-                    own circus journey. Whether you’re looking to equip yourself for the next performance or
-                    searching for a special gift, we have everything you need to bring the circus home!<br><br>
-
-                    As the day winds down, prepare for our thrilling evening show, featuring spectacular
-                    performances from talented artists that will leave you on the edge of your seat. Experience the
-                    magic of the circus as acts captivate audiences of all ages.<br><br>
-
-                    Join us at Lestival for a day filled with laughter, learning, and unforgettable memories. We
-                    can’t wait to share the joy of the circus with you!
-                </p>
-            </div>
-
-            <!-- LOCATION -->
-            <div class="location">
-                <h2 class="loc-head">Where Are We?</h2>
-
-                <div class="loc-map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11714.26826354349!2d-1.2046513107586223!3d52.58533324522957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48775d93f157d193%3A0x56b7785b38782f19!2sBrockington%20College!5e0!3m2!1sen!2suk!4v1740503288067!5m2!1sen!2suk"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-
-                    <h3 class="w3w-loc">What 3 Words</h3>
-                    <a href="https://what3words.com/" target="_blank">///class.dots.mild</a>
-                </div>
-            </div>
-
-        </article>
-
-        <!-- GALLERY -->
-        <article class="gallery">
-            <h2 class="gal-head">Gallery</h2>
-
-            <div class="row">
-                <div class="column">
-                    <img src="https://i.ibb.co/sdvvj4S8/DSC0306.jpg" alt="Circus Performer">
-                </div>
-
-                <div class="column">
-                    <img src="https://i.ibb.co/9HrqZ65W/oddballs.jpg" alt="Oddballs Stall">
-                    <img src="https://i.ibb.co/CK1j9pPh/DSC0446.jpg" alt="Circus Act">
-                </div>
-
-                <div class="column">
-                    <img src="./images/overshot.jpg" alt="Festival Overview">
-                </div>
-            </div>
-        </article>
-
-        <!-- CONTACT -->
-        <article class="contact">
-            <h2 class="cont-head">Contacting Us</h2>
-
-            <p class="cont-cont">
-                If you need to contact us at any point leading up to the event, please email us at
-                <a href="mailto:contact@lestival.co.uk" target="_blank">contact@lestival.co.uk</a>,
-                or check out our social media pages for more information. We are always happy to help with any queries
-                you may have.
-            </p>
-        </article>
-
-        <!-- SOCIAL MEDIA -->
-        <section class="social-media">
-            <h3 class="social-media-title">Stay Connected</h3>
-
-            <a href="https://www.facebook.com/lestival.uk" target="_blank" class="social-icon">
-                <img src="https://img.icons8.com/?size=48&id=jZ0kw76QEzJU&format=png&color=000000" alt="Facebook">
-            </a>
-
-            <a href="https://www.instagram.com/lestival_uk/" target="_blank" class="social-icon">
-                <img src="https://img.icons8.com/?size=48&id=nj0Uj45LGUYh&format=png&color=000000" alt="Instagram">
-            </a>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        All media displayed within this website is exclusive property of Lestival or the relevant photographers stated.
-    </footer>
-
+    <footer class="lest-footer">All media displayed within this website is exclusive property of Lestival or the
+      relevant photographers stated.</footer>
+  </div>
 </body>
 
 </html>
